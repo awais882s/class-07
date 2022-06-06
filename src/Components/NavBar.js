@@ -9,8 +9,8 @@ export default function NavBar() {
       <Link to="/Company">Company</Link>
       <Link to="/About">About</Link>
       <Link to="/About">Contact</Link>
-      <Link to="/About">Register</Link>
-      <Link to="/About">Login</Link>
+      <Link to="/Register">Register</Link>
+      <Link to="/Login">Login</Link>
 
 
     </div>
