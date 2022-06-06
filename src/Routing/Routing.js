@@ -1,5 +1,6 @@
 import React from "react";
-import {BrowserRouter, Routes ,Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from "../Components/NavBar";
 
 // pages for navigations
 import Header from "../Components/Header";
@@ -11,11 +12,12 @@ export default function Routing() {
   return (
     <BrowserRouter>
       <Header />
+      <NavBar />
       <Routes>
-        <Route index element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="About" element={<About />} />
         <Route path="Company" element={<Company />} />
-        <Route/>
+        <Route />
       </Routes>
       <Footer />
     </BrowserRouter>
