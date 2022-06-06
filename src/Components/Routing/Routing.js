@@ -10,7 +10,13 @@ import Company from "../Components/Company";
 export default function Routing() {
   return (
     <div>
-        
+        <Router>
+            <Switch>
+                <Route path='/'>
+
+                </Route>
+            </Switch>
+        </Router>
     </div>
   )
 }
