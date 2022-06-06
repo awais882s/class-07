@@ -5,12 +5,12 @@ import NavBar from "../Components/NavBar";
 // pages for navigations
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import Home from "../Components/Home";
-import About from "../Components/About";
-import Company from "../Components/Company";
-import Contact from "../Components/Contact";
-import Register from "../Components/Register";
-import Login from "../Components/Login";
+import Home from "../Pages/Home";
+import About from "../Pages/About";
+import Company from "../Pages/Company";
+import Contact from "../Pages/Contact";
+import Register from "../Pages/Register";
+import Login from "../Pages/Login";
 export default function Routing() {
   return (
     <BrowserRouter>
