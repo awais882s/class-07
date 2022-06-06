@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter as Router, Route , Switch } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // pages for navigations
 import Header from "../Components/Header";
@@ -10,13 +10,21 @@ import Company from "../Components/Company";
 export default function Routing() {
   return (
     <div>
-        <Router>
-            <Switch>
-                <Route path='/'>
-
-                </Route>
-            </Switch>
-        </Router>
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+          <Route path="/Company">
+            <Company />
+          </Route>
+          <Route path="/About">
+            <About />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
     </div>
-  )
+  );
 }
