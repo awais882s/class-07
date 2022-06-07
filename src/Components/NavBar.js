@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div className="justify-content-center d-flex">
+      <nav class="navbar navbar-expand-lg navbar-dark ui">
         <div class="container-fluid">
           <Link class="navbar-brand" to="/">
             Company Logo
@@ -38,15 +38,19 @@ export default function NavBar() {
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to="/About">
+                <Link class="nav-link" to="/Contact">
                   Contact
                 </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to="/Register">Register</Link>
+                <Link class="nav-link" to="/Register">
+                  Register
+                </Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to="/Login">Login</Link>
+                <Link class="nav-link" to="/Login">
+                  Login
+                </Link>
               </li>
             </ul>
           </div>
