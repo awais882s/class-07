@@ -14,18 +14,23 @@ import Login from "../Pages/Login";
 export default function Routing() {
   return (
     <BrowserRouter>
-      <Header />
       <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="About" element={<About />} />
-        <Route path="Company" element={<Company />} />
-        <Route path="Contact" element={<Contact />} />
-        <Route path="Reister" element={<Register />} />
-        <Route path="Login" element={<Login />} />
-        <Route />
-      </Routes>
-      <Footer />
+      <div className="container card shadow m-5 w-25">
+        <div className="card-body">
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="About" element={<About />} />
+            <Route path="Company" element={<Company />} />
+            <Route path="Contact" element={<Contact />} />
+            <Route path="Reister" element={<Register />} />
+            <Route path="Login" element={<Login />} />
+            <Route />
+          </Routes>
+          <Footer />
+
+        </div>
+      </div>
     </BrowserRouter>
   );
 }
