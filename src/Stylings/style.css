@@ -1,13 +1,20 @@
+body{
+  clear: both;
+}
+::selection{
+  color:#00ff26;
+  background-color: rgb(145, 93, 158);
+}
 .ui {
-  background: #fc5c7d; /* fallback for old browsers */
+  background: #edd710; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #6a82fb,
-    #fc5c7d
+    #91fb6a,
+    #e206af
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #6a82fb,
-    #fc5c7d
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    #c86afb,
+    #5ce9fc
+  ); 
 }
