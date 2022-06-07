@@ -36,7 +36,6 @@ export default function Routing() {
           </div>
         </div>
       </BrowserRouter>
-      
     </>
   );
 }

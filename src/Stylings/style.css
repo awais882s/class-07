@@ -2,8 +2,7 @@ body{
   clear: both;
 }
 ::selection{
-  color:#00ff26;
-  background-color: rgb(145, 93, 158);
+  color:#00ff88;
 }
 .ui {
   background: #edd710; /* fallback for old browsers */
