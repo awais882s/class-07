@@ -39,3 +39,8 @@ export default function Routing() {
     </>
   );
 }
+
+// auth
+// private routing
+// nested routing
+// dynamic routing
