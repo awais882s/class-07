@@ -11,6 +11,7 @@ import Contact from "../Pages/Contact";
 import Register from "../Pages/Register";
 import Login from "../Pages/Login";
 import Sections from "../Pages/Sections";
+import Students, { StudentsFunction } from "../Components/classVsfunctional";
 export default function Routing() {
   return (
     <>
@@ -21,19 +22,17 @@ export default function Routing() {
             <div className="card-body">
               <h4>
                 <Routes>
-
-                  <Route path="/" element={<Home />} />
+                  <Route path="/" element={<Students />} />
                   <Route path="About" element={<About />} />
                   <Route path="Company" element={<Company />} />
                   <Route path="Contact" element={<Contact />} />
                   <Route path="Register" element={<Register />} />
                   <Route path="Login" element={<Login />} />
-                  <Route path="Section" element={<Sections/>}/>
+                  <Route path="Section" element={<Sections />} />
                   <Route />
                 </Routes>
               </h4>
               <Footer />
-
             </div>
           </div>
         </div>

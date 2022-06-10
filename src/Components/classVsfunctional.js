@@ -5,7 +5,7 @@ export default class Students extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            stuname: "AWAIS S",
+            stuName: "AWAIS S",
             students: ["AWAIS S", "PRINCE", "SHAHZADA"]
         }
     }
@@ -16,12 +16,12 @@ export default class Students extends Component {
         return (
             <div>
                 List of Students
-                <p>Student Name:{this.state.stuname}</p>
+                <p>Student Name:{this.state.stuName}</p>
                 <input type="text" placeholder='Student Name:' onChange={this.onChangeHandler} />
                 {
-                    this.state.students.map((customerName) => {
+                    this.state.students.map((studentName) => {
                         return (
-                            <p>{customerName}</p>
+                            <p>{studentName}</p>
                         )
                     })
                 }
