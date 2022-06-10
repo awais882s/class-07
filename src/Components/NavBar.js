@@ -43,6 +43,11 @@ export default function NavBar() {
                 </Link>
               </li>
               <li class="nav-item">
+                <Link class="nav-link" to="/Section">
+                  Sectons
+                </Link>
+              </li>
+              <li class="nav-item">
                 <Link class="nav-link" to="/Register">
                   Register
                 </Link>

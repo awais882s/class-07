@@ -10,6 +10,7 @@ import Company from "../Pages/Company";
 import Contact from "../Pages/Contact";
 import Register from "../Pages/Register";
 import Login from "../Pages/Login";
+import Sections from "../Pages/Sections";
 export default function Routing() {
   return (
     <>
@@ -18,7 +19,7 @@ export default function Routing() {
         <div className="justify-content-center d-flex text-white">
           <div className="container card shadow m-5 w-25 ui">
             <div className="card-body">
-              <h2>
+              <h6>
                 <Routes>
 
                   <Route path="/" element={<Home />} />
@@ -27,9 +28,10 @@ export default function Routing() {
                   <Route path="Contact" element={<Contact />} />
                   <Route path="Register" element={<Register />} />
                   <Route path="Login" element={<Login />} />
+                  <Route path="Section" element={<Sections/>}/>
                   <Route />
                 </Routes>
-              </h2>
+              </h6>
               <Footer />
 
             </div>
