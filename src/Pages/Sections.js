@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 export default function Sections() {
     const ctaHandler = () => {
-        toast('Amazing you have click the button', {
+        toast.error('Amazing you have click the button', {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -13,7 +13,21 @@ export default function Sections() {
             draggable: true,
             progress: undefined,
         });
+
     }
+    const ctaHandlerSuccess = () => {
+        toast.warn('You have click the button', {
+            position: "top-left",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
+
+    }
+
     return (
         <div>
             Sections
@@ -24,9 +38,17 @@ export default function Sections() {
                 3.Open file firebase.json where build you type (&& firebase deploy)<br />
                 4.Again npm run build command
             </p>
-            <button type='button' className='btn btn-dark' onClick={ctaHandler}>
-                Call to Actions
+
+            <button type='button' className='btn btn-danger' onClick={ctaHandler}>
+                Error
             </button>
+            <button type='button' className='btn btn-success m-4' onClick={ctaHandlerSuccess}>
+                Success
+
+            </button>
+
+
+
         </div>
     )
 }

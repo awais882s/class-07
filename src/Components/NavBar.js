@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function NavBar() {
   return (
     <div className="">
-      <nav class="navbar navbar-expand-lg navbar-dark ui">
+      <nav class="navbar navbar-expand-lg  navbar-dark ui">
         <div class="container-fluid">
           <Link class="navbar-brand" to="/">
             Company Logo
@@ -44,7 +44,7 @@ export default function NavBar() {
               </li>
               <li class="nav-item">
                 <Link class="nav-link" to="/Section">
-                  Sectons
+                  Sections
                 </Link>
               </li>
               <li class="nav-item">
