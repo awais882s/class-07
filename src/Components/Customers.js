@@ -25,3 +25,8 @@ export default class Customers extends Component {
     return <div>Class Base customer Customers {customerName}</div>;
   }
 }
+
+// next class
+// life cycle - functional components , class base
+// custom hooks
+// redux start
