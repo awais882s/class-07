@@ -1,11 +1,10 @@
 import React from 'react'
 import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function Sections() {
     const ctaHandler = () => {
-        toast.success('🦄 Wow so easy!', {
+        toast('Amazing you have click the button', {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -14,7 +13,6 @@ export default function Sections() {
             draggable: true,
             progress: undefined,
         });
-
     }
     return (
         <div>
@@ -26,7 +24,7 @@ export default function Sections() {
                 3.Open file firebase.json where build you type (&& firebase deploy)<br />
                 4.Again npm run build command
             </p>
-            <button type="button" class="btn btn-warning" onClick={ctaHandler}>
+            <button type='button' className='btn btn-dark' onClick={ctaHandler}>
                 Call to Actions
             </button>
         </div>
