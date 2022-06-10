@@ -17,9 +17,9 @@ export default function Routing() {
       <BrowserRouter>
         <NavBar />
         <div className="justify-content-center d-flex text-white">
-          <div className="container card shadow m-5 w-25 ui">
+          <div className="container card shadow m-5 w-100 ui">
             <div className="card-body">
-              <h6>
+              <h4>
                 <Routes>
 
                   <Route path="/" element={<Home />} />
@@ -31,7 +31,7 @@ export default function Routing() {
                   <Route path="Section" element={<Sections/>}/>
                   <Route />
                 </Routes>
-              </h6>
+              </h4>
               <Footer />
 
             </div>
